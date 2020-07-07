@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const { response } = require("express");
 const app = express();
-app.listen(3000,"localhost", function(){
+app.listen(process.env.PORT||3000, function(){
     console.log("server connected");
 });
 app.use(express.static("frontend"));
