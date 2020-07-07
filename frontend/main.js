@@ -11,7 +11,7 @@ window.addEventListener("load",function(){
     addButtonElement.addEventListener("click",function(){
         let firstNumber = firstNumberElement.value;
         let secondNumber = secondNumberElement.value;
-        let url = "http://localhost:3000/addition?a="+firstNumber+"&b="+secondNumber;
+        let url = "/addition?a="+firstNumber+"&b="+secondNumber;
         fetch(url)
         .then(function(res){
             res.json()
@@ -30,7 +30,7 @@ window.addEventListener("load",function(){
     subButtonElement.addEventListener("click",function(){
         let firstNumber = firstNumberElement.value;
         let secondNumber = secondNumberElement.value;
-        let url = "http://localhost:3000/subtraction?a="+firstNumber+"&b="+secondNumber;
+        let url = "/subtraction?a="+firstNumber+"&b="+secondNumber;
         fetch(url)
         .then(function(res){
             res.json()
@@ -49,7 +49,7 @@ window.addEventListener("load",function(){
     mulButtonElement.addEventListener("click",function(){
         let firstNumber = firstNumberElement.value;
         let secondNumber = secondNumberElement.value;
-        let url = "http://localhost:3000/multiplication?a="+firstNumber+"&b="+secondNumber;
+        let url = "/multiplication?a="+firstNumber+"&b="+secondNumber;
         fetch(url)
         .then(function(res){
             res.json()
@@ -68,7 +68,7 @@ window.addEventListener("load",function(){
     divButtonElement.addEventListener("click",function(){
         let firstNumber = firstNumberElement.value;
         let secondNumber = secondNumberElement.value;
-        let url = "http://localhost:3000/division?a="+firstNumber+"&b="+secondNumber;
+        let url = "/division?a="+firstNumber+"&b="+secondNumber;
         fetch(url)
         .then(function(res){
             res.json()
